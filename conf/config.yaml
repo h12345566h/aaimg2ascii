@@ -1,0 +1,25 @@
+gormlog: true
+ginmode: "release"
+
+autotls: false
+domain: ""
+email: ""
+
+mailgundomail: ""
+mailgunkey: ""
+
+mysql:
+  username: "root"
+  password: ""
+  addr: "127.0.0.1"
+  name: "aaimg2ascii"
+
+log:
+  path: ""
+  filename: ""
+
+commodityprice1: 1200
+commodityprice2: 1000
+commodityprice3: 800
+freight: 60
+
