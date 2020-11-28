@@ -13,6 +13,7 @@ import (
 func InitRouter(app *gin.Engine) {
 	apiRoute := app.Group("/api")
 	{
+		apiRoute.GET("/hello", controllers.GetUserController().Hello)
 		apiRoute.POST("/register", controllers.GetUserController().Register)
 		apiRoute.POST("/login", controllers.GetUserController().Login)
 		apiRoute.GET("/getHotTop", controllers.GetImg2asciiController().GetHotTop)
@@ -25,7 +26,6 @@ func InitRouter(app *gin.Engine) {
 			jwtRoute.POST("/updateHot", controllers.GetImg2asciiController().UpdateHot)
 			jwtRoute.GET("/getMyAscii", controllers.GetImg2asciiController().GetMyAscii)
 			jwtRoute.POST("/getUserAsciiById", controllers.GetImg2asciiController().GetUserAsciiById)
-
 
 		}
 		//jwt2Route := apiRoute.Group("/").Use(Jwt2Middleware)

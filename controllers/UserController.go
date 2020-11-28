@@ -143,3 +143,8 @@ func (c *UserController) UpdatePhoto(ctx *gin.Context) {
 		ctx.JSON(http.StatusBadRequest, newImgresult)
 	}
 }
+
+//region 測試
+func (c *UserController) Hello(ctx *gin.Context) {
+	ctx.JSON(http.StatusOK, "Hello")
+}
