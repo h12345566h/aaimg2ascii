@@ -10,7 +10,7 @@ mailgunkey: ""
 
 mysql:
   username: "root"
-  password: ""
+  password: "rootroot"
   addr: "127.0.0.1"
   name: "aaimg2ascii"
 

@@ -45,7 +45,7 @@ func main() {
 		//	})
 		//}))
 		srv := &http.Server{
-			Addr:    ":80",
+			Addr:    ":8000",
 			Handler: app,
 		}
 
@@ -75,7 +75,7 @@ func newApp() *gin.Engine {
 	app := gin.New()
 	log.Info("new app finished")
 	app.Use(CORSMiddleware())
-	app.Use(static.Serve("/",static.LocalFile("./public",false)))
+	app.Use(static.Serve("/", static.LocalFile("./public", false)))
 	return app
 }
 
